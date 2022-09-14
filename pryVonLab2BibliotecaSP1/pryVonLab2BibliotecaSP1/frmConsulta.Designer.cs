@@ -29,76 +29,115 @@ namespace pryVonLab2BibliotecaSP1
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.grdData = new System.Windows.Forms.DataGridView();
             this.dgvCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCodigoEditorial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCodigoAutor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCodigoDistrib = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView4
+            // grdData
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvCodigo,
             this.dgvNombre,
             this.dgvCodigoEditorial,
             this.dgvCodigoAutor,
             this.dgvCodigoDistrib});
-            this.dataGridView4.Location = new System.Drawing.Point(-3, -1);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(547, 455);
-            this.dataGridView4.TabIndex = 3;
-            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
+            this.grdData.Location = new System.Drawing.Point(39, 24);
+            this.grdData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdData.Name = "grdData";
+            this.grdData.RowHeadersWidth = 51;
+            this.grdData.Size = new System.Drawing.Size(686, 402);
+            this.grdData.TabIndex = 3;
+            this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
             // dgvCodigo
             // 
             this.dgvCodigo.HeaderText = "Codigo";
+            this.dgvCodigo.MinimumWidth = 6;
             this.dgvCodigo.Name = "dgvCodigo";
+            this.dgvCodigo.Width = 125;
             // 
             // dgvNombre
             // 
             this.dgvNombre.HeaderText = "Nombre";
+            this.dgvNombre.MinimumWidth = 6;
             this.dgvNombre.Name = "dgvNombre";
+            this.dgvNombre.Width = 125;
             // 
             // dgvCodigoEditorial
             // 
             this.dgvCodigoEditorial.HeaderText = "Editorial";
+            this.dgvCodigoEditorial.MinimumWidth = 6;
             this.dgvCodigoEditorial.Name = "dgvCodigoEditorial";
+            this.dgvCodigoEditorial.Width = 125;
             // 
             // dgvCodigoAutor
             // 
             this.dgvCodigoAutor.HeaderText = "Codigo Autor";
+            this.dgvCodigoAutor.MinimumWidth = 6;
             this.dgvCodigoAutor.Name = "dgvCodigoAutor";
+            this.dgvCodigoAutor.Width = 125;
             // 
             // dgvCodigoDistrib
             // 
             this.dgvCodigoDistrib.HeaderText = "Codigo Distribuidor";
+            this.dgvCodigoDistrib.MinimumWidth = 6;
             this.dgvCodigoDistrib.Name = "dgvCodigoDistrib";
+            this.dgvCodigoDistrib.Width = 125;
+            // 
+            // btnPrev
+            // 
+            this.btnPrev.Location = new System.Drawing.Point(642, 451);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(83, 32);
+            this.btnPrev.TabIndex = 4;
+            this.btnPrev.Text = "Previous";
+            this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(642, 501);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(83, 32);
+            this.btnNext.TabIndex = 5;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 450);
-            this.Controls.Add(this.dataGridView4);
+            this.ClientSize = new System.Drawing.Size(747, 557);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnPrev);
+            this.Controls.Add(this.grdData);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmConsulta";
             this.Text = "Consulta";
             this.Load += new System.EventHandler(this.frmConsulta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdData)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView grdData;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigoEditorial;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigoAutor;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigoDistrib;
+        private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.Button btnNext;
     }
 }
