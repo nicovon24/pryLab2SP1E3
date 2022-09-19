@@ -23,15 +23,48 @@ namespace pryVonLab2BibliotecaSP1
             char separador = Convert.ToChar(",");
             while (!sr.EndOfStream)
             {
+                //---
                 //will store the data from the file
                 string[] arrDataFile = sr.ReadLine().Split(separador);
+            
+                //---
+                //editorial, we want to convert its id into the name of the distribuitor
+                int editorial = Convert.ToInt32(arrDataFile[2]);
+                string editorialString = "";
 
+                switch (editorial)
+                {
+                    case 1: editorialString = "Prentice Hall"; break;
+                    case 2: editorialString = "Cuspide"; break;
+                    case 3: editorialString = "Rama"; break;
+                    case 4: editorialString = "Mc Graw Hill"; break;
+                    case 5: editorialString = "Anay Multimedia"; break;
+                    case 6: editorialString = "Peuser"; break;
+                    case 7: editorialString = "Colombo"; break;
+                }
+
+                //---
+                //distribuidor, we want to convert its id into the name of the distribuitor
+                int distribuidor = Convert.ToInt32(arrDataFile[4]);
+                string distribuidorString = "";
+
+                switch (distribuidor) {
+                    case 1: distribuidorString = "Los alarces"; break;
+                    case 2: distribuidorString = "Mayocor Libros"; break;
+                    case 3: distribuidorString = "La buena lectura"; break;
+                    case 4: distribuidorString = "Sam Walter"; break;
+                    case 5: distribuidorString = "Infinito"; break;
+                    case 6: distribuidorString = "Delta al Cuadrado"; break;
+                    case 7: distribuidorString = "Rapilent"; break;
+                }
+
+                //---
                 ////will store the data in an array so we can add it into the matrix
-                matrizData[rowMatriz, 0] = arrDataFile[0];
-                matrizData[rowMatriz, 1] = arrDataFile[1];
-                matrizData[rowMatriz, 2] = arrDataFile[2];
-                matrizData[rowMatriz, 3] = arrDataFile[3];
-                matrizData[rowMatriz, 4] = arrDataFile[4];
+                matrizData[rowMatriz, 0] = arrDataFile[0]; //codigo
+                matrizData[rowMatriz, 1] = arrDataFile[1]; //name
+                matrizData[rowMatriz, 2] = editorialString; //editorial
+                matrizData[rowMatriz, 3] = arrDataFile[3]; //author
+                matrizData[rowMatriz, 4] = distribuidorString; //distribuidor
                 rowMatriz++;
             }
 
@@ -59,12 +92,14 @@ namespace pryVonLab2BibliotecaSP1
                     matrizData[rowGrd, 4]
                 );
                 rowGrd++;
+                btnNext.Enabled = true; //we verify that it is enabled
             }
             else
             {
                 MessageBox.Show("You have showed all the data");
+                btnNext.Enabled = false;
             }
-
+            btnPrev.Enabled = true; //every time we click next, we can press next. We verify that is enabled.
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
@@ -73,16 +108,19 @@ namespace pryVonLab2BibliotecaSP1
             {
                 grdData.Rows.RemoveAt(rowGrd - 1);
                 rowGrd--;
+                btnPrev.Enabled = true; //we verify that it is enabled
             }
             else
             {
                 MessageBox.Show("Can not remove data because you have 0 elements in the data grid view");
+                btnPrev.Enabled = false;
             }
+            btnNext.Enabled = true; //every time we click prev, we can press next. We verify that is enabled.
         }
 
         private void btnShowAll_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 21; i++)
+            for (int i = 0; i < 21; i++)
             {
                 grdData.Rows.Add(
                     matrizData[i, 0],
@@ -92,6 +130,20 @@ namespace pryVonLab2BibliotecaSP1
                     matrizData[i, 4]
                 );
             }
+            btnClearAll.Enabled = true;
+            btnNext.Enabled = false;
+            btnPrev.Enabled = false;
+            btnShowAll.Enabled = false;
+        }
+
+        private void btnClearAll_Click(object sender, EventArgs e)
+        {
+            grdData.Rows.Clear();
+            rowGrd = 0;
+            btnShowAll.Enabled = true;
+            btnNext.Enabled = true;
+            btnPrev.Enabled = true;
+            btnClearAll.Enabled = false;
         }
     }
 }
