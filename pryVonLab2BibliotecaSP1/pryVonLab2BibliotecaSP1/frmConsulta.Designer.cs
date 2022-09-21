@@ -51,11 +51,10 @@ namespace pryVonLab2BibliotecaSP1
             this.dgvCodigoEditorial,
             this.dgvCodigoAutor,
             this.dgvCodigoDistrib});
-            this.grdData.Location = new System.Drawing.Point(39, 25);
-            this.grdData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdData.Location = new System.Drawing.Point(12, 20);
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(685, 402);
+            this.grdData.Size = new System.Drawing.Size(686, 327);
             this.grdData.TabIndex = 3;
             this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
@@ -96,10 +95,10 @@ namespace pryVonLab2BibliotecaSP1
             // 
             // btnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(643, 450);
-            this.btnPrev.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrev.Location = new System.Drawing.Point(714, 20);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(83, 32);
+            this.btnPrev.Size = new System.Drawing.Size(62, 26);
             this.btnPrev.TabIndex = 4;
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = true;
@@ -107,10 +106,10 @@ namespace pryVonLab2BibliotecaSP1
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(643, 501);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Location = new System.Drawing.Point(714, 61);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(83, 32);
+            this.btnNext.Size = new System.Drawing.Size(62, 26);
             this.btnNext.TabIndex = 5;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -118,10 +117,10 @@ namespace pryVonLab2BibliotecaSP1
             // 
             // btnShowAll
             // 
-            this.btnShowAll.Location = new System.Drawing.Point(525, 450);
-            this.btnShowAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnShowAll.Location = new System.Drawing.Point(714, 106);
+            this.btnShowAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnShowAll.Name = "btnShowAll";
-            this.btnShowAll.Size = new System.Drawing.Size(83, 32);
+            this.btnShowAll.Size = new System.Drawing.Size(62, 26);
             this.btnShowAll.TabIndex = 6;
             this.btnShowAll.Text = "Show all";
             this.btnShowAll.UseVisualStyleBackColor = true;
@@ -129,10 +128,10 @@ namespace pryVonLab2BibliotecaSP1
             // 
             // btnClearAll
             // 
-            this.btnClearAll.Location = new System.Drawing.Point(525, 501);
-            this.btnClearAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClearAll.Location = new System.Drawing.Point(714, 147);
+            this.btnClearAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClearAll.Name = "btnClearAll";
-            this.btnClearAll.Size = new System.Drawing.Size(83, 32);
+            this.btnClearAll.Size = new System.Drawing.Size(62, 26);
             this.btnClearAll.TabIndex = 7;
             this.btnClearAll.Text = "Clear all";
             this.btnClearAll.UseVisualStyleBackColor = true;
@@ -140,15 +139,14 @@ namespace pryVonLab2BibliotecaSP1
             // 
             // frmConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 601);
+            this.ClientSize = new System.Drawing.Size(793, 374);
             this.Controls.Add(this.btnClearAll);
             this.Controls.Add(this.btnShowAll);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.grdData);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmConsulta";
             this.Text = "Consulta";
             this.Load += new System.EventHandler(this.frmConsulta_Load);

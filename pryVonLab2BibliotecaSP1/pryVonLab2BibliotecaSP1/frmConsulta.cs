@@ -67,7 +67,6 @@ namespace pryVonLab2BibliotecaSP1
                 matrizData[rowMatriz, 4] = distribuidorString; //distribuidor
                 rowMatriz++;
             }
-
         }
 
         private void frmConsulta_Load(object sender, EventArgs e)
@@ -116,10 +115,12 @@ namespace pryVonLab2BibliotecaSP1
                 btnPrev.Enabled = false;
             }
             btnNext.Enabled = true; //every time we click prev, we can press next. We verify that is enabled.
+            btnShowAll.Enabled = true;
         }
 
         private void btnShowAll_Click(object sender, EventArgs e)
         {
+            grdData.Rows.Clear(); //checking that the grd is empty
             for (int i = 0; i < 21; i++)
             {
                 grdData.Rows.Add(
@@ -130,10 +131,11 @@ namespace pryVonLab2BibliotecaSP1
                     matrizData[i, 4]
                 );
             }
+            rowGrd = 21;
+            btnShowAll.Enabled = false;
             btnClearAll.Enabled = true;
             btnNext.Enabled = false;
-            btnPrev.Enabled = false;
-            btnShowAll.Enabled = false;
+            btnPrev.Enabled = true;
         }
 
         private void btnClearAll_Click(object sender, EventArgs e)
@@ -141,9 +143,9 @@ namespace pryVonLab2BibliotecaSP1
             grdData.Rows.Clear();
             rowGrd = 0;
             btnShowAll.Enabled = true;
+            btnClearAll.Enabled = false;
             btnNext.Enabled = true;
             btnPrev.Enabled = true;
-            btnClearAll.Enabled = false;
         }
     }
 }
