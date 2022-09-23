@@ -22,5 +22,10 @@ namespace pryVonLab2BibliotecaSP1
             frmConsulta frmNew = new frmConsulta();
             frmNew.Show();
         }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

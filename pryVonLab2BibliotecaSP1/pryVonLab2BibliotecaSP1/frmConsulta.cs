@@ -99,6 +99,7 @@ namespace pryVonLab2BibliotecaSP1
                 btnNext.Enabled = false;
             }
             btnPrev.Enabled = true; //every time we click next, we can press next. We verify that is enabled.
+            btnClearAll.Enabled = true;
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
