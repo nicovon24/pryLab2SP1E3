@@ -30,15 +30,16 @@ namespace pryVonLab2BibliotecaSP1
         private void InitializeComponent()
         {
             this.grdData = new System.Windows.Forms.DataGridView();
-            this.btnPrev = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnShowAll = new System.Windows.Forms.Button();
-            this.btnClearAll = new System.Windows.Forms.Button();
             this.dgvCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCodigoEditorial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCodigoAutor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCodigoDistrib = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnShowAll = new System.Windows.Forms.Button();
+            this.btnClearAll = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,12 +53,52 @@ namespace pryVonLab2BibliotecaSP1
             this.dgvCodigoAutor,
             this.dgvCodigoDistrib});
             this.grdData.Location = new System.Drawing.Point(16, 25);
-            this.grdData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdData.Margin = new System.Windows.Forms.Padding(4);
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(901, 525);
+            this.grdData.Size = new System.Drawing.Size(901, 568);
             this.grdData.TabIndex = 3;
             this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
+            // 
+            // dgvCodigo
+            // 
+            this.dgvCodigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvCodigo.HeaderText = "Codigo";
+            this.dgvCodigo.MinimumWidth = 6;
+            this.dgvCodigo.Name = "dgvCodigo";
+            this.dgvCodigo.Width = 80;
+            // 
+            // dgvNombre
+            // 
+            this.dgvNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvNombre.HeaderText = "Nombre";
+            this.dgvNombre.MinimumWidth = 6;
+            this.dgvNombre.Name = "dgvNombre";
+            this.dgvNombre.Width = 85;
+            // 
+            // dgvCodigoEditorial
+            // 
+            this.dgvCodigoEditorial.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvCodigoEditorial.HeaderText = "Editorial";
+            this.dgvCodigoEditorial.MinimumWidth = 6;
+            this.dgvCodigoEditorial.Name = "dgvCodigoEditorial";
+            this.dgvCodigoEditorial.Width = 85;
+            // 
+            // dgvCodigoAutor
+            // 
+            this.dgvCodigoAutor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvCodigoAutor.HeaderText = "Codigo Autor";
+            this.dgvCodigoAutor.MinimumWidth = 6;
+            this.dgvCodigoAutor.Name = "dgvCodigoAutor";
+            this.dgvCodigoAutor.Width = 105;
+            // 
+            // dgvCodigoDistrib
+            // 
+            this.dgvCodigoDistrib.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dgvCodigoDistrib.HeaderText = "Codigo Distribuidor";
+            this.dgvCodigoDistrib.MinimumWidth = 6;
+            this.dgvCodigoDistrib.Name = "dgvCodigoDistrib";
+            this.dgvCodigoDistrib.Width = 138;
             // 
             // btnPrev
             // 
@@ -103,57 +144,29 @@ namespace pryVonLab2BibliotecaSP1
             this.btnClearAll.UseVisualStyleBackColor = true;
             this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
-            // dgvCodigo
+            // btnBack
             // 
-            this.dgvCodigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgvCodigo.HeaderText = "Codigo";
-            this.dgvCodigo.MinimumWidth = 6;
-            this.dgvCodigo.Name = "dgvCodigo";
-            this.dgvCodigo.Width = 80;
-            // 
-            // dgvNombre
-            // 
-            this.dgvNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgvNombre.HeaderText = "Nombre";
-            this.dgvNombre.MinimumWidth = 6;
-            this.dgvNombre.Name = "dgvNombre";
-            this.dgvNombre.Width = 85;
-            // 
-            // dgvCodigoEditorial
-            // 
-            this.dgvCodigoEditorial.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgvCodigoEditorial.HeaderText = "Editorial";
-            this.dgvCodigoEditorial.MinimumWidth = 6;
-            this.dgvCodigoEditorial.Name = "dgvCodigoEditorial";
-            this.dgvCodigoEditorial.Width = 85;
-            // 
-            // dgvCodigoAutor
-            // 
-            this.dgvCodigoAutor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgvCodigoAutor.HeaderText = "Codigo Autor";
-            this.dgvCodigoAutor.MinimumWidth = 6;
-            this.dgvCodigoAutor.Name = "dgvCodigoAutor";
-            this.dgvCodigoAutor.Width = 114;
-            // 
-            // dgvCodigoDistrib
-            // 
-            this.dgvCodigoDistrib.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dgvCodigoDistrib.HeaderText = "Codigo Distribuidor";
-            this.dgvCodigoDistrib.MinimumWidth = 6;
-            this.dgvCodigoDistrib.Name = "dgvCodigoDistrib";
-            this.dgvCodigoDistrib.Width = 138;
+            this.btnBack.Location = new System.Drawing.Point(16, 615);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(83, 32);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 563);
+            this.ClientSize = new System.Drawing.Size(1059, 669);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClearAll);
             this.Controls.Add(this.btnShowAll);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.grdData);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmConsulta";
             this.Text = "Consulta";
             this.Load += new System.EventHandler(this.frmConsulta_Load);
@@ -174,5 +187,6 @@ namespace pryVonLab2BibliotecaSP1
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigoEditorial;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigoAutor;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigoDistrib;
+        private System.Windows.Forms.Button btnBack;
     }
 }

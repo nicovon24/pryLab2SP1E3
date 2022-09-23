@@ -19,6 +19,7 @@ namespace pryVonLab2BibliotecaSP1
 
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmConsulta frmNew = new frmConsulta();
             frmNew.Show();
         }
@@ -26,6 +27,12 @@ namespace pryVonLab2BibliotecaSP1
         private void frmMenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MessageBox.Show("Have a good one!");
         }
     }
 }

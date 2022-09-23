@@ -44,3 +44,15 @@ C:\Users\Nicolas Von Muhlinen\Desktop\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pr
 C:\Users\Nicolas Von Muhlinen\Desktop\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.csproj.CoreCompileInputs.cache
 C:\Users\Nicolas Von Muhlinen\Desktop\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.exe
 C:\Users\Nicolas Von Muhlinen\Desktop\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.pdb
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\bin\Debug\pryVonLab2BibliotecaSP1.exe.config
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\bin\Debug\pryVonLab2BibliotecaSP1.exe
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\bin\Debug\pryVonLab2BibliotecaSP1.pdb
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.csproj.AssemblyReference.cache
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.frmConsulta.resources
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.frmMenu.resources
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.Properties.Resources.resources
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.csproj.GenerateResource.cache
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.exe
+C:\Users\Nicolas Von Muhlinen\Downloads\Parcial 1\Lab2-Biblio-SP1\pryVonLab2BibliotecaSP1\pryVonLab2BibliotecaSP1\obj\Debug\pryVonLab2BibliotecaSP1.pdb

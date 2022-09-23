@@ -148,5 +148,12 @@ namespace pryVonLab2BibliotecaSP1
             btnNext.Enabled = true;
             btnPrev.Enabled = true;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMenu frmNew = new frmMenu();
+            frmNew.Show();
+        }
     }
 }
